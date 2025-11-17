@@ -23,7 +23,7 @@ run = input => {
   catch ({message}) {
     if (message.includes('Failed to connect') && !numi.running()) {
       numi.activate()
-      delay(.25)
+      delay(.35)
       se.processes.byName('Numi').visible = false
 
       alfred.runTrigger('numi', {
